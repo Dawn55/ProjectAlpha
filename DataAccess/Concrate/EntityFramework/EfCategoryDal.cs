@@ -1,14 +1,16 @@
-﻿using Core.DataAccess;
-using Core.DataAccess.EntityFramework;
-using DataAccess.Abstract;
-using Entities.Concrate;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.DataAccess.EntityFramework;
+using DataAccess.Abstract;
+using DataAccess.Concrate.EntityFramework;
+using Entities.Concrate;
 
-namespace DataAccess.Concrate.EntityFramework
+namespace DataAccess.Concrete.EntityFramework
 {
-   public class EfCategoryDal: EfEntityRepositoryBase<Category,NorthwindContext>,ICategoryDal
+    public class EfCategoryDal : EfEntityRepositoryBase<Category, NorthwindContext>, ICategoryDal
     {
     }
 }
+

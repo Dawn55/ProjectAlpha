@@ -1,16 +1,14 @@
-﻿using Entities.Concrate;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.Utilities.Results;
+using Entities.Concrate;
 
 namespace Business.Abstract
 {
-   public interface ICategoryService
+    public interface ICategoryService
     {
-        List<Category> GetAll();
-        Category GetById(int id);
-        void Add(Category category);
-        void Update(Category category);
-        void Delete(Category category);
+        IDataResult<List<Category>> GetList();
     }
 }
